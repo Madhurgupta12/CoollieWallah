@@ -14,9 +14,7 @@ router.post("/check",(req,res)=>{
     .then(result=>{
         if(result!=null)
         {   
-                                   
-
-            
+                                
             User.find({})
          
             .then(print=>{
