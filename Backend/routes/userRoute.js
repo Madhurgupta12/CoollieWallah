@@ -15,22 +15,7 @@ router.post("/check",(req,res)=>{
         if(result!=null)
         {   
                                 
-            User.find({})
-         
-            .then(print=>{
-                if(print!=null)
-                {
-                    console.log(print)
-                    return res.status(200).json(print);
-                }
-                else
-                {
-                    return res.status(422).json({message:"Failure"})
-                }
-            })
-            .catch(err=>{
-                return res.status(422).json({error:err.message})
-            })
+            return res.json({success:true});
         }
         else
         {
