@@ -16,7 +16,7 @@ function FrontPage() {
           <Link to="/addcollie">AddCollie</Link>
           </button>
           <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-lg border-2 border-green-500 transition duration-300">
-            Show Existing Collies
+           <Link to="/show">Show Existing Collies</Link> 
           </button>
         </div>
       </div>

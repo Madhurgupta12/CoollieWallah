@@ -28,6 +28,20 @@ router.post("/check",(req,res)=>{
         
     })
 
+    router.get("/find",(req,res)=>{
+
+        User.find()
+       
+        .then(user=>{
+            user.password=undefined;
+       res.json({user});
+        })
+        .catch(err=>{
+            console.log(err);
+        })
+
+    })
+
     
     
     

@@ -1,5 +1,4 @@
 
-
 import React, { useState } from "react";
 import swl from "sweetalert"
 function AddColie() {
@@ -31,9 +30,9 @@ function AddColie() {
       }
       else
       {
-        swl({
+         swl({
             title: 'Successfully created',
-            text: 'This is a SweetAlert dialog.',
+            text: 'This is a SweetAlert .',
             icon: 'success',
             confirmButtonText: 'OK'
           });
